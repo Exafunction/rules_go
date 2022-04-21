@@ -86,6 +86,7 @@ go_context_data(
 cgo_context_data(
     name = "cgo_context_data",
     visibility = ["//visibility:private"],
+    features = ["force_static_link_cpp_runtimes"],
 )
 
 # cgo_context_data_proxy depends on cgo_context_data if cgo is enabled and
